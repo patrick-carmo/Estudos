@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Links</title>
+
+    <style type="text/css">
+
+        a{
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        /*Links não visitados, cor*/
+        a:link{
+            color: #b9c941;
+        }
+        /*Links visitados*/
+        a:visited{
+            color: #837c7c;
+        }
+        /*Muda a cor quando passa o mouse em cima*/
+        a:hover{
+            color: #fff;
+            border: 1px solid blue;
+            background: #6d790f;
+        }
+        h1{
+            display: inline;
+            border: 1px solid red;
+        }
+        h1:hover{
+            color: rgb(52, 39, 128);
+            border: solid rgb(73, 45, 119);
+        }
+        /*Clicar e segurar, muda cor*/
+        a:active{
+            color: #e4f371
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Teste</h1>
+    </div>
+    <a href="posicionamento.html" target="_blank">Posicionamento</a> |
+    <a href="sobrepondo.html" target="_blank">Sobrepondo</a> |
+    <a href="http://www.google.com.br" target="blank">Google</a>
+    <a href="http://www.youtube.com.br" target="blank">Google</a>
+
+</body>
+</html>
