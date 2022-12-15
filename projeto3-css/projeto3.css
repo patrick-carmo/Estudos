@@ -23,10 +23,33 @@ body{
     
 }
 
-#area-principal{
-    background: white;
+#area-postagens, #area-lateral{
+    background: orange;
 }
 
+#area-principal{
+    background: white;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#area-postagens{
+    width: 660px;
+    float: left;
+}
+
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+
+}
 /*Formatações em Geral*/
 
 h1{
