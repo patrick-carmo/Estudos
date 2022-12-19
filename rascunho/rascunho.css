@@ -1,0 +1,10 @@
+.fotos{
+    object-fit:contain;
+    object-position: center;
+    background-color: white;
+    align-items: center;
+}
+.divisao{
+    display: flex;
+    background-color: black;
+}
