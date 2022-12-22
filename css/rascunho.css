@@ -1,21 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 #cabecalho{
-    background-color: #f7b600;
-    padding: 15px;
+    background: silver;
     text-align: center;
+    height: 100px;
 }
 
-#navegacao{
-
+#cabecalho a:hover{
+    text-decoration: line-through;
+    background-color: black;
+    color: white;
 }
+#titulo{
+    padding: 15px;
+}
+#links{
+    padding-bottom: 10px;
+}
+
 
 #corpo{
-
+    width: 700px;
+    margin: 20px auto;
+    border: 1px solid blue;
 }
 
-#noticias{
-
+#noticias1{
+    border: 1px solid red;
+    float: left;
+    width: 350px;
 }
 
-#links{
-
+#noticias2{
+    border: 1px solid blue;
+    float: right;
+    width: 250px;
+}
+#clean{
+    clear: both;
 }
