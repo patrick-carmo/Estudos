@@ -6,6 +6,7 @@
 body {
 	font-size: 1em;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(184, 94, 94) 50%, rgb(51, 20, 190) 100%);
 }
 
 #cabecalho{
