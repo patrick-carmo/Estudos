@@ -11,3 +11,13 @@ const prod2 = {
 }
 
 console.log(prod2)
+
+const pessoa = {
+    nome: "Patrick",
+    sobrenome: "do Carmo",
+    peso: 29,
+    altura: 1.87
+}
+
+
+console.log(pessoa.nome+" "+pessoa.sobrenome)
