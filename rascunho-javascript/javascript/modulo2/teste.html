@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type=button] {
+            background-color: #0099ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: #0077cc;
+        }
+
+        #res {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #area {
+            margin: 20px auto;
+            /* centraliza a div */
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="Nota 1">
+    <input type="number" name="txtn2" id="txtn2" placeholder="Nota 2">
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <div id="res">Resultado</div>
+    <div id="area">Interaja...</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1');
+            var tn2 = window.document.querySelector('input#txtn2');
+            var res = window.document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 + n2;
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`;
+        }
+
+        function multiplicar() {
+            var tn1 = window.document.getElementById('txtn1');
+            var tn2 = window.document.querySelector('input#txtn2');
+            var res = window.document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var m = n1 * n2;
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a <strong>${m}</strong>`;
+        }
+
+        var a = window.document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        function clicar() {
+            a.innerText = 'Clicou!';
+            a.style.background = 'blue';
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!';
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!';
+            a.style.background = 'green';
+        }
+
+function sair() {
+    a.innerText = 'Saiu!';
+    a.style.background = 'green';
+}
+</script>
+</body>
+</html>
