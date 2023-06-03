@@ -1,0 +1,44 @@
+body{
+  margin: 0px;
+  font-family: Arial;
+}
+
+.titulo h1{
+  text-align: center;
+  font-size: 35px;
+}
+span{
+  color: #febf01;
+}
+.titulos{
+  color: white;
+}
+.divs2{
+  padding: 30px;
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 30px;
+}
+.divs{
+  margin: 30px;
+}
+h2{
+  margin: 0px;
+}
+p{
+  color: #b2b2b2;
+}
+
+button{
+  color: #000000;
+  background-color: #febe01;
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}

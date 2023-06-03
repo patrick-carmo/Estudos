@@ -1,0 +1,122 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  margin: 0px;
+  /* display: grid; */
+  /* align-items: center; */
+}
+
+h1,h2,h3,p{
+  margin: 0px;
+}
+img{
+  max-width: 100%;
+}
+section{
+  display: grid;
+  justify-items: center;
+  padding: 40px;
+}
+span{
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  top: 20px;
+  right: -30px;
+  background-color: red;
+}
+p{
+  font-size: 20px;
+}
+.titulo{
+  font-size: 60px;
+  text-align: center;
+  padding: 40px;
+}
+.menu{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; */
+}
+.menu-itens{
+  padding: 15px 30px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  text-decoration: none;
+}
+#menu-itens1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 30px;
+}
+#menu-itens4{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 30px;
+}
+.grid{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.texto{
+  display: grid;
+  background-color: white;
+  padding: 40px;
+  justify-items: end;
+  align-content: center;
+  /* align-self: center; */
+  text-align: right;
+  gap: 30px;
+  position: relative;
+}
+.texto h2{
+  font-size: 30px;
+}
+.texto a{
+  background-color: #ee2211;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 35px;
+}
+
+.bike{
+  font-size: 64px;
+  text-align: right;
+  align-self: center;
+  color: #c6c6c6;
+  padding: 50px;
+}
+.descricao{
+  background-color: white;
+  padding: 40px;
+}
+.descricao-itens{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 20px;
+  gap: 10px;
+}
+
+.descricao-itens p{
+  grid-column: 2;
+}
+/* img{
+  grid-area: 1/1;
+}
+.texto{
+  grid-area: 1/2
+} */
+footer{
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+}

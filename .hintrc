@@ -8,8 +8,13 @@
     "axe/name-role-value": [
       "default",
       {
-        "input-button-name": "off"
+        "input-button-name": "off",
+        "link-name": "off"
       }
-    ]
+    ],
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off",
+    "detect-css-reflows/layout": "off",
+    "meta-viewport": "off"
   }
 }
