@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cacaca;
+}
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+div {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+header {
+  padding-top: 30px;
+  background-color: #f7b600;
+}
+header h1 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+.span {
+  color: #4e4e4e;
+}
+
+.postagem span {
+  width: 640px;
+  height: 1px;
+  margin: 10px 0px;
+  background-color: #f7b600;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  background-color: white;
+  color: #f7b600;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 920px;
+  margin: 20px auto;
+}
+.postagens1 {
+  grid-area: 1/1;
+}
+.postagens2 {
+  grid-area: 2/1;
+}
+.postagem {
+  display: grid;
+  padding: 20px;
+  background-color: white;
+  max-width: auto;
+  /* text-align: left; */
+  justify-items: start;
+}
+.postagem a {
+  display: inline;
+  margin-top: 10px;
+}
+.postagem img {
+  /* margin-bottom: 10px; */
+  max-width: 640px;
+}
+.postagem h2 {
+  color: #f7b600;
+}
+.postagem p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.ler {
+  color: #f7b600;
+  text-decoration: none;
+}
+.ler:hover {
+  color: #999797;
+}
+
+.recentes {
+  display: grid;
+  gap: 20px;
+  align-self: start;
+}
+.titulo-h3 {
+  text-align: center;
+  display: block;
+  background-color: #b1b1b1;
+  color: #565656;
+}
+.postagens-recentes {
+  background-color: white;
+  padding: 10px;
+  max-width: 240px;
+}
+.listas a,
+li {
+  text-decoration: none;
+  color: #f7b600;
+  padding: 2px 0px;
+  margin: 2px 0px;
+}
+.listas a:hover {
+  color: #4e4e4e;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #565656;
+  margin: 10px;
+}
