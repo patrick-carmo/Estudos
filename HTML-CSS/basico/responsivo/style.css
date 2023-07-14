@@ -194,3 +194,21 @@ footer {
   /* text-align: center; */
   justify-content: center;
 }
+
+@media (max-width: 700px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .inicio::after{
+    content: none;
+  }
+  .bike-itens{
+    text-align: center;
+  }
+}
+
+@media (max-width: 568px){
+  .bike-itens{
+    font-size: 2rem;
+  }
+}
