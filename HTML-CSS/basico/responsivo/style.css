@@ -37,6 +37,7 @@ a {
   justify-content: center;
   margin: 30px;
   padding: 30px;
+  min-width: 50%;
 }
 
 /* .logo{
@@ -202,13 +203,26 @@ footer {
   .inicio::after{
     content: none;
   }
+  .inicio{
+    justify-items: center;
+    text-align: center;
+  }
   .bike-itens{
+    text-align: center;
+  }
+  footer{
     text-align: center;
   }
 }
 
 @media (max-width: 568px){
   .bike-itens{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    /* word-wrap: break-word; */
+  }
+}
+@media (max-width: 341px){
+  .bike-itens{
+  font-size: 2rem;
   }
 }
