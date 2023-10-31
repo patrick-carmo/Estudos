@@ -3,6 +3,17 @@
 
 function contarPalavras(str) {
   // Seu código aqui
+  const palavras = str.split(' ')
+
+  const resultado = {}
+
+  for (let palavra of palavras) {
+    resultado[palavra] 
+    ? resultado[palavra]++ 
+    : (resultado[palavra] = 1)
+  }
+
+  return resultado
 }
 
 const texto = 'o gato pulou sobre o muro e o gato foi visto novamente'
