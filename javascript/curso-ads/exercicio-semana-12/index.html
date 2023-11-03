@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>ExercícioS de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Olá, aqui você encontra JavaScript!</h1>
+        <p>Nesta página web você verá uma variedade de exercícios interativos de JavaScript, para aprimorar suas habilidades de programação web Front-end.</p>
+        </section>
+    </header>
+    <main id="conteudo">
+        <section class="par" id="dom">
+            <h2>Explorando o Dom</h2>
+            <!-- <button id="botao_fundo" onclick="alterarCorDeFundo()">Alterar cor de fundo</button> -->
+            <button id="botao_fundo">Alterar cor de fundo</button>
+            <button id="botao_fundo_classe" onclick="alteraCorClasse()">Alterar cor da classe</button>
+        </section>
+        <section id="oper1">
+            <h2>Operações</h2>
+            <div>
+                <label for="numero1">Número 1</label>
+                <input type="number" name="numero1" id="numero1">
+            </div>
+            <div>
+                <label for="numero2">Número 2</label>
+                <input type="number" name="numero2" id="numero2">
+            </div>
+            <div>
+                <button id="somar">Somar</button>
+                <button id="subtrair">Subtrair</button>
+                <button id="multiplicar">Multiplicar</button>
+                <button id="dividir">Dividir</button>
+            </div>
+            <div id="resultado">
+
+            </div>
+
+        </section>
+        <section id="oper2" class="par">
+            <h2>Operações com formulário e condicionais</h2>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Digite dois números e escolha a operação matemática</legend>
+                    <div>
+                        <label for="n1">Número 1</label>
+                        <input type="number" name="n1" id="n1">
+                    </div>
+                    <div>
+                        <label for="n2">Número 2</label>
+                        <input type="number" name="n2" id="n2">
+                    </div>
+                    <div>
+                        <p><strong>Operação</strong></p>
+                        <input type="radio" name="operacao" id="soma" value="soma">
+                        <label for="soma">Soma</label>
+
+                        <input type="radio" name="operacao" id="subtracao" value="subtracao">
+                        <label for="subtracao">Subtração</label>
+
+                        <input type="radio" name="operacao" id="multiplicacao" value="multiplicacao">
+                        <label for="multiplicacao">Multiplicação</label>
+
+                        <input type="radio" name="operacao" id="divisao" value="divisao">
+                        <label for="divisao">Divisão</label>
+               
+                    </div>
+                    <input type="submit" value="Calcular">
+                </fieldset>
+            </form>
+        </section>
+        <section id="rep">
+            <h2>Repetição</h2>
+            <img src="img/elefante.png" alt="Ícone de um elefante">
+            <div>
+                <p><strong>Quantas vezes você quer repetir a música do elefante?</strong></p>
+                <input type="number" id="quantidade" name="quantidade">
+                <button id="repetir">Repetir</button>
+            </div>
+            <div id="resultado_repeticao"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <a href="https://www.unisuam.edu.br/" target="_blank"><abbr title="Universidade Augusto Motta">Unisuam</abbr></a> - Integração em Desenvolvimento Frontend. Conteúdo fictício para fins educacionais</p>
+        <address>Avenida Paris, 84 - Bonsucesso, Rio de Janeiro - RJ</address>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

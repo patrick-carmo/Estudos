@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Neon&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color:#41007e;
+    background: #ffffff;
+}
+p, input, button, textarea, label, address, legend
+{
+    font-size: 1.4em;
+    padding: .5em;
+}
+input[type="submit"]
+{
+    padding: 1em;
+    margin: 1em;
+    background-color:#41007e;
+    color:#f2e4ff;
+}
+
+fieldset
+{
+    width: 80%;
+    margin: 0 10%;
+    border: #f2e4ff;
+}
+header
+{
+    background-color: #41007e;
+    padding: 2em;   
+    text-align: center;
+    color:#f2e4ff
+
+}
+    header h1
+    {
+        font-size: 3.2em;
+        padding: 0.5em 0;
+        font-family: 'Tilt Neon';
+    }
+main
+{
+    margin: 2% 0;
+    text-align: center;
+}
+    main h2
+    {
+        font-family: 'Tilt Neon';
+        font-size: 2.2em;
+        text-transform: uppercase;
+        padding: 1em 0;
+    }
+    main section
+    {
+        min-height: 250px;
+        border-top: 2px solid #41007e;
+        padding: 1em 0;
+    }
+    main section:first-child
+    {
+        border: none;
+    }
+
+    main section button
+    {
+
+        display: inline-block;
+        margin: 1em;
+        background-color: #41007e;
+        color:#f2e4ff;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 2em;
+        border-radius: 1.5em;
+    }
+    main section button:hover
+    {
+        background-color: #ffbb00;
+        color: #41007e;
+    }
+    main section div#resultado, main section div#resultado_repeticao
+    {
+        background-color: #f1d27c;
+        color: #41007e;
+        font-size: 1.4em;
+    }
+    main section#rep
+    {
+        text-align: center;
+    }
+    main section#rep img
+    {
+        width: 100px;
+    }
+
+footer
+{
+    background-color: #41007e;
+    padding: .5em;   
+    text-align: center;
+    color: #f2e4ff;
+}
+    footer a
+    {
+        color:  #ffbb00;
+    }

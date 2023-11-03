@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" sizes="192x192" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form
+        action="https://unisuam.edu.br/"
+        class="needs-validation formulario"
+        method="post"
+        id="formulario"
+      >
+        <fieldset>
+          <legend>Cadastrar</legend>
+          
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              minlength="10"
+              required
+            />
+            <label for="nome">Nome</label>
+            <p class="invalid-feedback">O nome deve conter ao menos 10 caracteres.</p>
+          </div>
+
+          <div class="form-floating">
+            <input type="number" class="form-control" name="idade" id="idade" placeholder="Idade" min="0" />
+            <label for="idade">Idade</label>
+            <p class="invalid-feedback">Campo obrigatório. Idade mínima aceita: 16 anos</p>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="endereco"
+              id="endereco"
+              placeholder="Endereço"
+              minlength="3"
+              required
+            />
+            <label for="endereco">Endereço</label>
+            <p class="invalid-feedback">Endereço deve ter ao menos 4 caracteres.</p>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="login"
+              id="login"
+              placeholder="Login"
+              minlength="5"
+              maxlength="5"
+            />
+            <label for="login">Login</label>
+            <p class="invalid-feedback">
+              Login deve conter somente letras e números ter exatos 5 caracteres.
+            </p>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              name="senha"
+              id="senha"
+              minlength="8"
+              maxlength="8"
+              required
+              placeholder="Senha"
+            />
+            <label for="senha">Senha</label>
+            <i class="bi bi-eye-fill mostrarSenha" onclick="mostrarSenha()"></i>
+            <p class="invalid-feedback">
+              A senha deve conter ao menos: 1 maiúscula, 1 minúscula, 1 caractere especial, 1
+              número, além de exatos 8 caracteres.
+            </p>
+            <p class="erroSenha">As senhas não são idênticas.</p>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              name="confirmarSenha"
+              id="confirmarSenha"
+              minlength="8"
+              maxlength="8"
+              required
+              placeholder="Confirmar senha"
+            />
+            <label for="confirmarSenha">Confirmar senha</label>
+            <p class="invalid-feedback">
+              A senha deve conter ao menos: 1 maiúscula, 1 minúscula, 1 caractere especial, 1
+              número, além de exatos 8 caracteres.
+            </p>
+            <p class="erroSenha">As senhas não são idênticas.</p>
+          </div>
+
+          <p id="mensagemDeErro"></p>
+
+          <div class="divBotaoSubmit">
+            <button type="submit" class="btn btn-primary" name="enviar" id="enviar">
+              Cadastrar
+            </button>
+            <button type="reset" class="btn btn-secondary" id="limpar" onclick="limparFormulario()">
+              Limpar
+            </button>
+          </div>
+
+          <a href="./ALTERNATIVA_AVALIACAO_FORMADORA_03_FRONT_END.pdf" target="_blank"
+            >PDF - Avaliação Formadora</a
+          >
+        </fieldset>
+      </form>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/regex.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mostrarSenha.js"></script>
+  </body>
+</html>
