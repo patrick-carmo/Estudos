@@ -1,0 +1,154 @@
+body {
+  margin: 0 auto;
+  background-image: url('../img/bg.jpg');
+  font-family: 'poppins';
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formulario {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.formulario input,
+.formulario input:focus {
+  background-color: hsl(218 92% 95%);
+}
+
+legend {
+  padding-bottom: 20px;
+  color: #555;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  word-wrap: break-all;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  grid-column: 1/-1;
+  transition: all 0.3s linear;
+}
+
+.formulario:hover legend {
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+legend::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #0d798f;
+  transition: all 0.3s linear;
+}
+
+.formulario:hover legend::after {
+  width: 100%;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  max-width: 450px;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.formulario div {
+  margin-bottom: 10px;
+}
+
+fieldset div:nth-child(2),
+fieldset div:nth-child(5),
+fieldset div:nth-child(6),
+fieldset div:nth-child(9)
+fieldset div:nth-child(10)   {
+  grid-column: 1/-1;
+}
+
+.sexo{
+  align-self: center;
+}
+
+fieldset a:last-child {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.divBotaoSubmit {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+
+.divBotaoSubmit button,
+.divBotaoSubmit a {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+}
+
+#mensagemDeErro {
+  display: none;
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+.erroSenha {
+  display: none;
+  color: #dc3545;
+}
+
+.form-floating .mostrarSenha {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .formulario {
+    max-width: 300px;
+  }
+  fieldset {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  legend {
+    font-size: 2.5rem;
+    hyphens: auto;
+  }
+
+  #mensagemDeErro {
+    font-size: 1.1rem;
+  }
+
+  .divBotaoSubmit {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
