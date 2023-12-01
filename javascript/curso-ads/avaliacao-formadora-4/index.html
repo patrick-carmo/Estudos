@@ -1,200 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastrar</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@400;500&amp;display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" sizes="192x192" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <main>
-      <form
-        action="https://unisuam.edu.br/"
-        class="needs-validation formulario"
-        method="post"
-        id="formulario"
-      >
-        <fieldset>
-          <legend>Cadastrar</legend>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet" />
 
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              name="nome"
-              id="nome"
-              placeholder="Nome"
-              required
-            />
-            <label for="nome">Nome</label>
-          </div>
+  <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" sizes="192x192" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <div class="form-floating">
-            <input
-              type="date"
-              class="form-control personalizado input-cadastro"
-              id="nascimento"
-              name="nascimento"
-              placeholder="Data de nascimento"
-              required
-            />
-            <label for="nascimento">Data de nascimento</label>
-          </div>
+<body>
+  <main>
+    <form action="https://www.unisuam.edu.br/" class="needs-validation formulario" method="post" id="formulario">
+      <fieldset>
+        <legend>Cadastrar</legend>
 
-          <div class="sexo">
-            <select class="form-select form-select-sm form-control" id="sexo" name="sexo" required>
-              <option selected disabled value="">Sexo</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required />
+          <label for="nome">Nome</label>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              name="nomeMaterno"
-              id="nomeMaterno"
-              placeholder="Nome Materno"
-              required
-            />
-            <label for="nomeMaterno">Nome Materno</label>
-          </div>
+        <div class="form-floating">
+          <input type="date" class="form-control" id="nascimento" name="nascimento" placeholder="Data de nascimento" max="2007-01-01" min="1920-01-01" required />
+          <label for="nascimento">Data de nascimento</label>
+        </div>
 
-          <div class="form-floating modal-input">
-            <input
-              type="text"
-              class="form-control input-cadastro"
-              id="cpf"
-              name="cpf"
-              placeholder=""
-              minlength="14"
-              required
-            />
-            <label for="cpf">CPF</label>
-          </div>
+        <div class="sexo">
+          <select class="form-select form-select-sm form-control" id="sexo" name="sexo" required>
+            <option selected disabled value="">Sexo</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="tel"
-              class="form-control input-cadastro"
-              id="celular"
-              name="celular"
-              placeholder=""
-              minlength="19"
-              required
-            />
-            <label for="celular">Telefone Celular</label>
-          </div>
-          <div class="form-floating">
-            <input
-              type="tel"
-              class="form-control input-cadastro"
-              id="fixo"
-              name="fixo"
-              minlength="18"
-              required
-              placeholder=""
-            />
-            <label for="fixo">Telefone Fixo</label>
-          </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="nomeMaterno" id="nomeMaterno" placeholder="Nome Materno" required />
+          <label for="nomeMaterno">Nome Materno</label>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              name="endereco"
-              id="endereco"
-              placeholder="Endereço"
-              minlength="3"
-              required
-            />
-            <label for="endereco">Endereço</label>
-          </div>
+        <div class="form-floating modal-input">
+          <input type="text" class="form-control input-cadastro" id="cpf" name="cpf" placeholder="" minlength="14" required />
+          <label for="cpf">CPF</label>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              name="login"
-              id="login"
-              placeholder="Login"
-              minlength="5"
-              maxlength="5"
-            />
-            <label for="login">Login</label>
-          </div>
+        <div class="form-floating">
+          <input type="tel" class="form-control input-cadastro" id="celular" name="celular" placeholder="" minlength="19" required />
+          <label for="celular">Telefone Celular</label>
+        </div>
+        <div class="form-floating">
+          <input type="tel" class="form-control input-cadastro" id="fixo" name="fixo" minlength="18" required placeholder="" />
+          <label for="fixo">Telefone Fixo</label>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="password"
-              class="form-control"
-              name="senha"
-              id="senha"
-              minlength="8"
-              maxlength="8"
-              required
-              placeholder="Senha"
-            />
-            <label for="senha">Senha</label>
-            <i class="bi bi-eye-fill mostrarSenha" onclick="mostrarSenha()"></i>
-          </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço" minlength="3" required />
+          <label for="endereco">Endereço</label>
+        </div>
 
-          <div class="form-floating">
-            <input
-              type="password"
-              class="form-control"
-              name="confirmarSenha"
-              id="confirmarSenha"
-              minlength="8"
-              maxlength="8"
-              required
-              placeholder="Confirmar senha"
-            />
-            <label for="confirmarSenha">Confirmar senha</label>
-          </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="login" id="login" placeholder="Login" minlength="5" maxlength="5" />
+          <label for="login">Login</label>
+        </div>
 
-          <p id="mensagemDeErro"></p>
+        <div class="form-floating">
+          <input type="password" class="form-control" name="senha" id="senha" minlength="8" maxlength="8" required placeholder="Senha" />
+          <label for="senha">Senha</label>
+          <i class="bi bi-eye-fill mostrarSenha" onclick="mostrarSenha()"></i>
+        </div>
 
-          <div class="divBotaoSubmit">
-            <button type="submit" class="btn btn-primary" name="enviar" id="enviar">
-              Cadastrar
-            </button>
-            <button type="reset" class="btn btn-secondary" id="limpar" onclick="limparFormulario()">
-              Limpar
-            </button>
-          </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" name="confirmarSenha" id="confirmarSenha" minlength="8" maxlength="8" required placeholder="Confirmar senha" />
+          <label for="confirmarSenha">Confirmar senha</label>
+        </div>
 
-          <a href="./ALTERNATIVA -AVALIACAO_FORMADORA_04_FRONT_END.pdf" target="_blank"
-            >PDF - Avaliação Formadora</a
-          >
-        </fieldset>
-      </form>
-    </main>
+        <p id="mensagemDeErro"></p>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="js/script.js"></script>
-  </body>
+        <div class="divBotaoSubmit">
+          <button type="submit" class="btn btn-primary" name="enviar" id="enviar">
+            Cadastrar
+          </button>
+          <button type="reset" class="btn btn-secondary" id="limpar" onclick="limparFormulario()">
+            Limpar
+          </button>
+        </div>
+
+        <a href="./ALTERNATIVA -AVALIACAO_FORMADORA_04_FRONT_END.pdf" target="_blank">PDF - Avaliação Formadora</a>
+      </fieldset>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
 </html>

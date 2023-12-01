@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
-  background-image: url('../img/bg.jpg');
-  font-family: 'poppins';
+  background-image: url("../img/bg.jpg");
+  font-family: "poppins";
 }
 
 p {
@@ -42,7 +42,7 @@ legend {
 }
 
 legend::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -63,6 +63,7 @@ fieldset {
   border-radius: 5px;
   padding: 20px;
   gap: 15px;
+  transition: all 0.3s;
 }
 
 .formulario div {
@@ -72,12 +73,11 @@ fieldset {
 fieldset div:nth-child(2),
 fieldset div:nth-child(5),
 fieldset div:nth-child(6),
-fieldset div:nth-child(9)
-fieldset div:nth-child(10)   {
+fieldset div:nth-child(9) fieldset div:nth-child(10) {
   grid-column: 1/-1;
 }
 
-.sexo{
+.sexo {
   align-self: center;
 }
 
@@ -98,7 +98,7 @@ fieldset a:last-child {
 .divBotaoSubmit a {
   width: 100%;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 0.3s;
 }
 
 .form-floating > .form-control-plaintext ~ label::after,
@@ -109,12 +109,17 @@ fieldset a:last-child {
 }
 
 #mensagemDeErro {
-  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  display: block;
   grid-column: 1/-1;
   text-align: center;
   font-size: 1.2rem;
   color: #dc3545;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
 }
+
 
 .erroSenha {
   display: none;
