@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Aprendendo novas tecnologias.",
   "main": "index.js",
-  "type": "module",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
   "scripts": {
-    "start": "node typescript/typescript-basico/index.js"
+    "start": "node typescriptindex.js"
   },
   "keywords": [],
   "author": "",
