@@ -41,3 +41,5 @@ const buscarDonoPet = (
 }
 
 console.log(buscarDonoPet(usuarios, 'Naninha'))
+
+export = {}
