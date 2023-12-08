@@ -32,12 +32,12 @@ const dadosUsuario = {
 
 const lerArquivo = (): unknown => {
   return JSON.parse(
-    fs.readFileSync('./typescript/tipos-de-dados-2/02/bd.json', 'utf-8')
+    fs.readFileSync('./typescript/tipos-de-dados-2/bd.json', 'utf-8')
   )
 }
 const escreverArquivo = (dados: any): void => {
   fs.writeFileSync(
-    './typescript/tipos-de-dados-2/02/bd.json',
+    './typescript/tipos-de-dados-2/bd.json',
     JSON.stringify(dados)
   )
 }

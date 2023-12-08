@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 
 async function escrita(texto: string): Promise<unknown> {
   if (typeof texto === 'string') {
-    return await fs.writeFile('./typescript/tipos-de-dados-2/01/bd.json', texto)
+    return await fs.writeFile('./typescript/tipos-de-dados-2/bd.json', texto)
   }
 
   console.log('O texto precisa ser uma string')
@@ -10,7 +10,7 @@ async function escrita(texto: string): Promise<unknown> {
 
 async function leitura(): Promise<void> {
   const dados = JSON.parse(
-    await fs.readFile('./typescript/tipos-de-dados-2/01/bd.json', 'utf-8')
+    await fs.readFile('./typescript/tipos-de-dados-2/bd.json', 'utf-8')
   ) as unknown
 
   if (dados !== null && dados !== undefined && typeof dados === 'object') {

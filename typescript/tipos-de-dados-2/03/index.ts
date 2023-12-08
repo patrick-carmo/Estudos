@@ -32,27 +32,29 @@ const dadosUsuario = {
 
 const lerArquivo = (): unknown => {
   return JSON.parse(
-    fs.readFileSync('./typescript/tipos-de-dados-2/03/bd.json', 'utf-8')
+    fs.readFileSync('./typescript/tipos-de-dados-2/bd.json', 'utf-8')
   )
 }
 const escreverArquivo = (dados: any): void => {
   fs.writeFileSync(
-    './typescript/tipos-de-dados-2/03/bd.json',
+    './typescript/tipos-de-dados-2/bd.json',
     JSON.stringify(dados)
   )
-}
-
-const cadastrarUsario = (dados: Usuario): Usuario => {
-  const bd = lerArquivo() as Usuario[]
-  bd.push(dados)
-  escreverArquivo(bd)
-  return dados
 }
 
 const listarUsuarios = (): Usuario[] => {
   return lerArquivo() as Usuario[]
 }
 
+const cadastrarUsario = (dados: Usuario): Usuario => {
+  const bd = listarUsuarios()
+  bd.push(dados)
+  escreverArquivo(bd)
+  return dados
+}
+
 const patrick = cadastrarUsario(dadosUsuario)
 const db = lerArquivo()
 console.log(patrick, db)
+
+export = {}
